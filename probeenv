@@ -1,0 +1,21 @@
+#############################################################
+# Script Name	: scpenv									#
+# Description	: Environment File for  SCP					#
+# DATE 			: 19-02-2018								#
+# AUTHOR		: Debashis.									#
+# NOTE			: To Compile Probe with Solarflare Use 		#
+#				: SF=SOLARFLARE								#
+#				: To Compile Probe with out Solarflare Use  #
+#				: SF=NO										#
+# Copyright (c) 2016, Pinnacle Digital (P) Ltd. New-Delhi	# 
+#############################################################
+
+PROBE_VER=2.0.1
+PROBE_ROOT=/home/specta/workspace/SpectaServer-v2.0.1
+PROBE_CONF=${PROBE_ROOT}/config
+
+export PROBE_VER
+export PROBE_ROOT
+export PROBE_CONF
+
+export LD_LIBRARY_PATH="/opt/pinnacle/SpectaProbe/Solarflare/openonload-201606-u1.3/build/gnu_x86_64/lib/ciul:/usr/local/lib:$LD_LIBRARY_PATH"
